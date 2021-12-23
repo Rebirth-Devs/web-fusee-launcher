@@ -3,16 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title>WebFG</title>
+  <title>Pretty WebFG</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Web Fusée Launcher</h1>
-  <p>Fusee Launcher ported to JavaScript using WebUSB.</p>
+  <h1>Web Fusée Launcher, but <i>Beautiful</i></h1>
+  <p>Fusee Launcher ported to JavaScript using WebUSB, with some added CSS.</p>
   <p>
-    Source can be found on <a href="https://github.com/atlas44/web-fusee-launcher">GitHub</a> (or by hitting view source, there is no backend!).
+    Source can be found on <a href="https://github.com/Rebirth-Devs/web-fusee-launcher">GitHub</a> (or by hitting view source, there is no backend!).
     Ported from <a href="https://github.com/reswitched/fusee-launcher">fusee-launcher</a>.
-    Thanks to ktemkin and ReSwitched for Fusée Gelée and a ton of other things!
+    Thanks to ktemkin, atlas44 and ReSwitched for Fusée Gelée and a ton of other things!
   </p>
 
   <p>
@@ -36,8 +37,9 @@
         If you do, you can try creating a file at <code>/etc/udev/rules.d/50-switch.rules</code>
         <div>With the following contents:</div>
         <div><code>SUBSYSTEM=="usb", ATTR{idVendor}=="0955", MODE="0664", GROUP="plugdev"</code></div>
+      <li>I wrote only the CSS for this project. All the code that smashes the stack, etc. was made by atlas44</li>
       </li>
-      <li>This has been tested and appears to work on Linux, OSX, Android (unrooted) and Chromebooks. Your mileage may vary.</li>
+      <li>This has been tested and appears to work on Linux, macOS/OS X, Android (unrooted) and Chromebooks. Your mileage may vary.</li>
     </ul>
   </p>
 
